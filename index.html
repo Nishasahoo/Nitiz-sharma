@@ -1,208 +1,537 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nitiz Sharma</title>
-    <link rel="stylesheet" href="styles.css">
-    <!-- Remix icon  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css">
-    <!-- Font Awesome icon  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    <!-- Swiper Slider CSS  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nitiz Sharma</title>
+<link rel="stylesheet" href="styles.css">
+<!-- Remix icon  -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css">
+<!-- Font Awesome icon  -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<!-- Swiper Slider CSS  -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.css">
 
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+  -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<!-- Main CSS -->
+
+<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://md-aqil.github.io/images/swiper.min.css">
+
+<!-- Font Awsome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous" />
+
+<!-- Icon -->
+<link rel="shortcut icon" href="https://templates.envytheme.com/finix/default/assets/img/favicon.png"
+    type="image/x-icon">
+
+<link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
 
 
-    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        .typing::after {
-            content: '|';
-            animation: blink 0.7s infinite;
-        }
 
-        @keyframes blink {
 
-            0%,
-            100% {
-                opacity: 1;
-            }
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 
-            50% {
-                opacity: 0;
-            }
-        }
+<style>
+    .form-container {
+        display: flex;
+        justify-content: space-between;
+        padding: 40px;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
 
-        .iti__selected-dial-code {
-            color: #747474;
-        }
+    .form-section {
+        width: 60%;
+        background-color: #000000;
+        padding: 30px;
 
-        .menu {
-            list-style: none;
-            display: flex;
-            margin-left: 20px;
-            padding: 0;
-            align-items: center;
-            gap: 20px;
-        }
+    }
 
-        .menu li {
-            position: relative;
-            display: flex;
-            align-items: center;
-        }
+    .form-section h2 {
+        margin-bottom: 20px;
+        font-size: 26px;
+        color: white;
+    }
 
-        .menu li a {
-            text-decoration: none;
-            color: #d5a12b;
-            padding: 4px 15px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            cursor: pointer;
-        }
+    .form-section input,
+    .form-section select,
+    .form-section textarea {
+        width: 100%;
+        padding: 8px 0px;
+        margin-bottom: 15px;
+        border: none;
+        border-bottom: 1px solid #edecec5b;
 
-        .dropdown-icon {
-            margin-left: 8px;
-        }
+        font-size: 16px;
+        background: transparent;
+        color: #6f7173;
+        outline: none;
+        margin-top: 20px;
+    }
 
-        /* Mega Menu Styling */
-        .mega-menu {
-            display: none;
-            position: absolute;
-            top: 160%;
-            left: 0;
-            background-color: #fff;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-            width: 850px;
-            z-index: 1000;
-            display: flex;
+    .separator {
+        height: 1px;
+        background: #777;
+        margin-bottom: 15px;
+    }
+
+    .form-section button {
+        background-color: #ffffff;
+        color: #000000;
+        padding: 12px 20px;
+        border: none;
+        cursor: pointer;
+        font-size: 18px;
+        width: 40%;
+        border-radius: 5px;
+    }
+
+    .form-section button:hover {
+        background-color: #d5a12b;
+    }
+
+    .address-section {
+        width: 48%;
+        background-color: #1a1616;
+        padding: 40px;
+        border-radius: 12px;
+        color: white;
+    }
+
+    .address-section h3 {
+        margin-bottom: 39px;
+        font-size: 24px;
+    }
+
+    .address-section p {
+        margin: 40px 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .address-section i {
+        margin-right: 10px;
+        font-size: 20px;
+        color: #d5a12b;
+    }
+
+    .address-section a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .address-section a:hover {
+        text-decoration: underline;
+    }
+
+    .cont {
+        background-color: #000 !important;
+    }
+
+    .iti__selected-dial-code {
+        color: #747474;
+    }
+
+
+
+    .perspective {
+        perspective: 1000px;
+    }
+
+    .testimonial-image {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 1.5rem;
+        transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    .btn-frosted {
+        background-color: #c5bdbd94;
+        transition: all 0.3s ease;
+    }
+
+    .btn-frosted:hover {
+        background-color: #c5bdbd;
+    }
+
+    /* RESPONSIVE DESIGN */
+    @media (max-width: 1024px) {
+        .form-container {
             flex-direction: column;
-            gap: 20px;
+            padding: 30px 20px;
         }
 
-        /* Individual Rows */
-        .mega-menu-row {
-            display: flex;
-            justify-content: space-between;
+        .form-section,
+        .address-section {
             width: 100%;
-            gap: 20px;
+            padding: 25px;
         }
 
-        /* Individual Columns */
-        .mega-menu-column {
-            flex: 1;
-            min-width: 200px;
-            padding: 0 10px;
+        .form-section button {
+            width: 100%;
         }
 
-        .mega-menu-column h4 {
-            margin-bottom: 10px;
+        .address-section h3 {
+            font-size: 22px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .form-section h2 {
+            font-size: 22px;
+        }
+
+        .form-section input,
+        .form-section select,
+        .form-section textarea {
+            font-size: 15px;
+        }
+
+        .form-section button {
             font-size: 16px;
-            color: #333;
+            padding: 10px;
         }
 
-        .mega-menu-column ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
+        .address-section {
+            padding: 25px;
+        }
+
+        .address-section h3 {
+            font-size: 20px;
+        }
+
+        .address-section p {
+            margin: 25px 0;
+            font-size: 14px;
+        }
+
+        .address-section i {
+            font-size: 18px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .form-container {
+            padding: 20px 10px;
+        }
+
+        .form-section h2 {
+            font-size: 20px;
+        }
+
+        .form-section input,
+        .form-section select,
+        .form-section textarea {
+            font-size: 14px;
+        }
+
+        .form-section button {
+            font-size: 15px;
+            padding: 10px;
+        }
+
+        .address-section p {
+            font-size: 13px;
+        }
+
+        .address-section i {
+            font-size: 16px;
+        }
+    }
+
+    .instructorfontsz {
+        font-size: 36px;
+    }
+
+    .nitizreviewsstudents {
+        font-family: Arial, sans-serif;
+        background: #f8f9fa;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .nitizreviewsheading {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .nitizreviewsslider {
+        width: 90%;
+        max-width: 1200px;
+        padding-bottom: 50px;
+    }
+
+    .nitizreviewsslide {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .nitizreviewscard {
+        background: linear-gradient(to right, #1f1d1d, #090909);
+        padding: 40px;
+        border-radius: 20px;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        color: white;
+        width: 30%;
+        transition: transform 0.3s ease;
+    }
+
+    .nitizreviewscard:hover {
+        transform: scale(1.05);
+    }
+
+    .nitizreviewscontent {
+        font-size: 16px;
+        margin-bottom: 15px;
+        line-height: 1.5;
+    }
+
+    .nitizreviewsauthor {
+        font-weight: bold;
+        font-size: 1.2rem;
+        margin-top: 10px;
+    }
+
+    .nitizreviewsimg {
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 4px solid white;
+        margin-bottom: 15px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nitizreviewsstars {
+        color: #d5a12b;
+        font-size: 1.5rem;
+    }
+
+    .nitizreviewsnext,
+    .nitizreviewsprev {
+        color: #d5a12b;
+        font-size: 1.5rem;
+    }
+
+    @media (max-width: 1024px) {
+        .nitizreviewsslide {
             flex-direction: column;
-        }
-
-        .mega-menu-column ul li {
-            margin-bottom: 5px;
-        }
-
-        .mega-menu-column ul li a {
-            color: #555;
-            text-decoration: none;
-            display: block;
-            white-space: nowrap;
-        }
-
-        .mega-menu-column ul li a:hover {
-            color: #a69e9e;
-            ;
-        }
-
-        /* Click to Show Mega Menu Instead of Hover */
-        .menu li .mega-menu {
-            display: none;
-            position: absolute;
-        }
-
-        .menu li.active .mega-menu {
-            display: flex;
-            /* border-top: 7px solid #d5a12b; */
-            /* border-radius: 12px; */
-        }
-
-        /* Fix "Corporate Training" in Single Line */
-        .menu li a[href="corporatetraining.html"] {
-            white-space: nowrap;
-        }
-
-        .menu .has-dropdown:hover .mega-menu a:after,
-        .menu .has-dropdown:hover .mega-menu a:before {
-            height: 0 !important;
-        }
-
-
-        .select2-container--default .select2-selection--single {
-            background-color: black !important;
-            border-bottom: 1px solid #aaa;
-            border-radius: 4px;
-        }
-
-
-        .select2-container--default .select2-selection--single {
-            border: 1px solid #aaa unset !important;
-        }
-
-        .typing::after {
-            content: '|';
-            animation: blink 0.7s infinite;
-        }
-
-        @keyframes blink {
-
-            0%,
-            100% {
-                opacity: 1;
-            }
-
-            50% {
-                opacity: 0;
-            }
-        }
-
-        nav {
-            background-color: black;
-        }
-
-        section {
-            width: 100%;
-            display: flex;
-            justify-content: center;
             align-items: center;
-            padding: 5% 12% unset !important;
         }
 
-        #heroSection {
-            display: none !important;
+        .nitizreviewscard {
+            width: 80%;
         }
-    </style>
+    }
+
+    @media (max-width: 768px) {
+        .nitizreviewsslide {
+            flex-direction: column;
+            align-items: center;
+        }
+
+
+
+        .nitizreviewsheading h1 {
+            font-size: 2.2rem;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .nitizreviewsheading h1 {
+            font-size: 1.8rem;
+        }
+
+        /* .nitizreviewscard {
+        padding: 25px;
+    } */
+
+        .nitizreviewscontent {
+            font-size: 14px;
+        }
+
+        .nitizreviewsauthor {
+            font-size: 1rem;
+        }
+
+        .nitizreviewsstars {
+            font-size: 1.2rem;
+        }
+    }
+
+
+    .testimonialspad {
+        padding: 5% 5% !important;
+    }
+
+
+    .scroll-toggle {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 999;
+    }
+
+    #scrollBtn {
+        color: goldenrod;
+        font-size: 24px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        background-color: #d3a02bd4;
+        color: #ffffff;
+        padding: 1px 13px !important;
+        /* border-radius: 50%; */
+        margin-right: 8px;
+    }
+
+    .scroll-toggle button:hover {
+        background-color: #555;
+        transform: scale(1.1);
+    }
+
+    .testimonial-container {
+        width: 100%;
+        max-width: 56rem;
+        padding: 2rem;
+    }
+
+    .testimonial-grid {
+        display: grid;
+        gap: 5rem;
+    }
+
+    .image-container {
+        position: relative;
+        width: 100%;
+        height: 24rem;
+        perspective: 1000px;
+    }
+
+    .testimonial-image {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 1.5rem;
+        transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    .testimonial-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .name {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #000;
+        margin-bottom: 0.25rem;
+    }
+
+    .designation {
+        font-size: 0.875rem;
+        color: #6b7280;
+        margin-bottom: 2rem;
+    }
+
+    .quote {
+        font-size: 1.125rem;
+        color: #4b5563;
+        line-height: 1.75;
+    }
+
+    .arrow-buttons {
+        display: flex;
+        gap: 1rem;
+        padding-top: 3rem;
+    }
+
+    .arrow-button {
+        width: 1.75rem;
+        height: 1.75rem;
+        border-radius: 50%;
+        background-color: #141414;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .arrow-button:hover {
+        background-color: #00a6fb;
+    }
+
+    .arrow-button svg {
+        width: 1.25rem;
+        height: 1.25rem;
+        fill: #f1f1f7;
+        transition: transform 0.3s;
+    }
+
+    .arrow-button:hover svg {
+        fill: #ffffff;
+    }
+
+    .prev-button:hover svg {
+        transform: rotate(-12deg);
+    }
+
+    .next-button:hover svg {
+        transform: rotate(12deg);
+    }
+
+    @media (min-width: 768px) {
+        .testimonial-grid {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .arrow-buttons {
+            padding-top: 0;
+        }
+    }
+</style>
+
 </head>
 
 <body>
-    <headerss>
+
+    <!-- HERO HEADER  -->
+    <header class="headermb">
+
+        <!-- <div>
+            <div class="header-contact" style="display: flex; justify-content: space-between; align-items: center; color: white;">
+                <div class="email" style="margin-left: 20px;">
+                    <i class="fa-solid fa-envelope" style="margin-right: 5px;"></i>
+                    <span>info@example.com</span>
+                </div>
+                <div class="phone" style="margin-right: 20px;">
+                    <i class="fa-solid fa-phone" style="margin-right: 5px;"></i>
+                    <span>+91 7019021129</span>
+                </div>
+            </div>
+        </div> -->
         <!-- NAV  -->
         <nav>
             <div class="nav-left">
@@ -221,8 +550,10 @@
                                     <ul>
                                         <li><a href="fortinet-nse8-training.html">FCX/NSE8</a></li>
                                         <li><a href="cciesecurity.html">CCIE Security</a></li>
-                                        <li><a href="ccie-data-center-training-and-certification.html">CCIE Data Center</a></li>
-                                        <li><a href="ccie-enterprise-infrastructure-training.html">CCIE Enterprise Infrastructure</a></li>
+                                        <li><a href="ccie-data-center-training-and-certification.html">CCIE Data
+                                                Center</a></li>
+                                        <li><a href="ccie-enterprise-infrastructure-training.html">CCIE Enterprise
+                                                Infrastructure</a></li>
                                         <li><a href="ccie-wireless-training.html">CCIE Wireless</a></li>
                                     </ul>
                                 </div>
@@ -231,7 +562,8 @@
                                     <ul>
                                         <li><a href="ccnp-security-training.html">CCNP Security Training</a></li>
                                         <li><a href="ccnp-data-center-training.html">CCNP Data Center Training</a></li>
-                                        <li><a href="ccnp-enterprise-infrastructure-training.html">CCNP Enterprise Infrastructure Training</a></li>
+                                        <li><a href="ccnp-enterprise-infrastructure-training.html">CCNP Enterprise
+                                                Infrastructure Training</a></li>
                                         <li><a href="ccnp-wireless-training.html">CCNP Wireless Training</a></li>
                                     </ul>
                                 </div>
@@ -243,17 +575,20 @@
                                     <h4>ASSOCIATE LEVEL TRAINING PROGRAMS</h4>
                                     <ul>
                                         <li><a href="ccna-course-and-certification.html">CCNA</a></li>
-                                        <li><a href="#">CWNA</a></li>
-                                        <li><a href="#">AWS</a></li>
+                                        <!-- <li><a href="#">CWNA</a></li>
+                                        <li><a href="#">AWS</a></li> -->
                                     </ul>
                                 </div>
                                 <div class="mega-menu-column">
                                     <h4>SPECIAL COURSES</h4>
                                     <ul>
-                                        <li><a href="#">SDN++</a></li>
-                                        <li style="margin-left: 20px;"><a href="#">SDWAN training and Certification</a>
+                                        <li><a href="cisco-sdn-training-and-certification/">SDN++</a></li>
+                                        <li style="margin-left: 20px;"><a
+                                                href="sdwan-training-and-certification.html">SDWAN training and
+                                                Certification</a>
                                         </li>
-                                        <li style="margin-left: 20px;"><a href="#">Cisco ACI training and
+                                        <li style="margin-left: 20px;"><a
+                                                href="cisco-aci-training-and-certification.html">Cisco ACI training and
                                                 Certification</a></li>
                                         <li><a href="fortinet-nse-4-certification.html">Fortinet NSE 4</a></li>
                                         <li><a href="#">Digital Marketing</a></li>
@@ -271,364 +606,970 @@
             <div class="nav-right flex items-center gap-4">
                 <div class="btn">
                     <!-- Login Button -->
-                    <button onclick="location.href='https://nitizsharma.com/dashboard/'" 
-                    class="bg-green-600 text-white rounded-lg hover:bg-green-700 transition">
-                Login/
-            </button>
-            
-            <!-- Register Button -->
-            <button onclick="location.href='https://nitizsharma.com/dashboard/'" 
-                    class="bg-red-600 text-white rounded-lg hover:bg-red-700 transition">
-                Register
-            </button>
+                    <button onclick="location.href='https://nitizsharma.com/dashboard/'"
+                        class="bg-green-600 text-white rounded-lg hover:bg-green-700 transition">
+                        Login/
+                    </button>
+
+                    <!-- Register Button -->
+                    <button onclick="location.href='https://nitizsharma.com/dashboard/'"
+                        class="bg-red-600 text-white rounded-lg hover:bg-red-700 transition">
+                        Register
+                    </button>
                 </div>
             </div>
+
             <div class="bars">
                 <i class="fa-solid fa-bars"></i>
             </div>
         </nav>
 
-
-
         <!-- HERO SECTION  -->
-        <div class="swiper heroSwipersss" id="heroSection">
+        <div class="swiper heroSwiper">
             <div class="swiper-wrapper">
-
+                <!-- slide 1 -->
                 <div class="swiper-slide">
                     <div class="hero-header">
                         <div class="hero-content">
-                            <h1 class="herheadingsize" class="" id="animatedText">Get in Touch – We're Here to Help!
+                            <h1 class="herheadingsize" class="" id="animatedText">Building Next-Generation</h1>
+                            <!-- <h1>Network Professionals</h1> -->
+                            <div class="">
+                                <div>
+                                    <h1>Network Professionals</h1>
+                                </div>
+                                <!-- <div>Empowering Tomorrow’s Networking Experts</div>
+                                <div>Developing Elite Network Professionals</div> -->
+
+                            </div>
+                            <p>Explore our platform for real-world learning. Engage with top instructors, comprehensive
+                                labs, and validate your Networking & Cybersecurity skills.</p>
+                            <!-- <div class="btn"
+                                style="display: flex; align-items: center; white-space: nowrap;width: auto;">
+                                <button style="white-space: nowrap;">Explore Courses</button>
+                                <i class="ri-arrow-right-up-long-line" style="margin-left: 5px;"></i>
+                            </div> -->
+                        </div>
+
+                        <!-- Enquiry Form Right -->
+                        <div class="form-container iquirymobilehd"
+                            style="flex: 1; min-width: 300px; max-width: 45%; background: #000; padding: 30px; border-radius: 15px; color: #fff; box-shadow: 0 8px 20px rgba(0,0,0,0.3); margin-top: 80px; margin-bottom:20px; sans-serif; overflow: visible;">
+
+                            <form action="https://formsubmit.co/nandini@nitizsharma.com" id="contactForm" method="POST">
+
+                                <!-- Hidden Settings -->
+                                <input type="hidden" name="_subject" value="New Enquiry from Website Form">
+                                <input type="hidden" name="_cc" value="malavsharma3@gmail.com">
+                                <input type="hidden" name="_autoresponse"
+                                    value="Thank you for contacting us. We’ll get back to you shortly.">
+                                <input type="hidden" name="_template" value="box">
+                                <input type="hidden" name="_next" value="#">
+
+                                <!-- Full Name -->
+                                <div style="margin-bottom: 15px;">
+                                    <input type="text" name="name" placeholder="Full Name" required
+                                        style="width: 100%; padding: 12px; background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.2); border-radius: 8px; color: #fff; outline: none;">
+                                </div>
+
+                                <!-- Email -->
+                                <div style="margin-bottom: 15px;">
+                                    <input type="email" name="email" placeholder="Your Email" required
+                                        style="width: 100%; padding: 12px; background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.2); border-radius: 8px; color: #fff; outline: none;">
+                                </div>
+
+                                <!-- Phone with Country Code -->
+                                <div style="display: flex; gap: 10px; margin-bottom: 15px;">
+                                    <select name="country_code" required
+                                        style="width: 146px; padding: 12px; background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.2); border-radius: 8px; color: #969ca8; outline: none;">
+                                        <option value="" disabled selected>Select Code</option>
+                                        <option value="+91">🇮🇳 +91</option>
+                                        <option value="+1">🇺🇸 +1</option>
+                                        <option value="+44">🇬🇧 +44</option>
+                                        <option value="+61">🇦🇺 +61</option>
+                                        <option value="+971">🇦🇪 +971</option>
+                                        <option value="+81">🇯🇵 +81</option>
+                                        <option value="+49">🇩🇪 +49</option>
+                                        <option value="+86">🇨🇳 +86</option>
+                                        <option value="+33">🇫🇷 +33</option>
+                                    </select>
+                                    <input type="tel" name="phone" placeholder="Phone Number" required
+                                        inputmode="numeric" pattern="[0-9]{6,15}"
+                                        title="Enter a valid phone number (6–15 digits)"
+                                        style="flex: 1; padding: 12px; background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.2); border-radius: 8px; color: #fff; outline: none;">
+                                </div>
+
+                                <!-- Course -->
+                                <div style="margin-bottom: 15px;">
+                                    <select name="course_type" required
+                                        style="width: 100%; padding: 12px; background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.2); border-radius: 8px; color: #969ca8; outline: none;">
+                                        <option disabled selected value="">Choose Course</option>
+                                        <option value="short-courses">FCX/NSE8</option>
+                                        <option value="featured-courses">CCIE Security</option>
+                                        <option value="undergraduate">CCIE Data Center</option>
+                                        <option value="diploma">CCIE Enterprise Infrastructure</option>
+                                        <option value="certificate">CCIE Wireless</option>
+                                        <option value="masters-degree">CCNA</option>
+                                        <option value="postgraduate">SDN++/SD-WAN/ACI</option>
+                                    </select>
+                                </div>
+
+                                <!-- Message -->
+                                <div style="margin-bottom: 15px;">
+                                    <textarea name="message" placeholder="Message" rows="4" required
+                                        style="width: 100%; padding: 12px; background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.2); border-radius: 8px; color: #fff; outline: none;"></textarea>
+                                </div>
+
+                                <!-- Submit Button -->
+                                <div>
+                                    <button type="submit"
+                                        style="width: 100%; padding: 14px; background: #fff; color: #000; font-weight: bold; border: none; cursor: pointer; border-radius: 8px; transition: all 0.3s ease;">
+                                        Enquire Now
+                                    </button>
+                                </div>
+                            </form>
+
+                            <!-- Success Message (will show on redirect page, not inline here) -->
+                            <p id="success-message"
+                                style="display:none; color: green; font-weight: bold; margin-top: 15px;">
+                                Form submitted successfully!
+                            </p>
+                        </div>
+
+
+
+
+
+
+                        <!-- <div class="hero-img">
+                            <img src="image/datacenterhero.png" alt="">
+                        </div> -->
+                    </div>
+                </div>
+                <!-- slide 2 -->
+                <!-- <div class="swiper-slide">
+                    <div class="hero-header">
+                        <div class="hero-content">
+                            <h1>Potential Unleashing with Aimo's Artificial Intelligence.</h1>
+                            <p>Grasping the Concept of Artificial Intelligence" by Aimo explores
+                                Al's principles, its potential to transform industries.</p>
+                            <div class="btn">
+                                <button>Get In Touch</button>
+                                <i class="ri-arrow-right-up-long-line"></i>
+                            </div>
+                        </div>
+                        <div class="hero-img">
+                            <img src="image/hero-1.webp" alt="">
+                        </div>
+                    </div>
+                </div>  -->
+            </div>
+        </div>
+        <!-- <div class="swiper-button-prev swiper-btn swiper-btn-prev"><i class="ri-arrow-left-s-line"></i></div>
+        <div class="swiper-button-next swiper-btn swiper-btn-next"><i class="ri-arrow-right-s-line"></i></div> -->
+    </header>
+    <!-- BRANDS COM SECTION  -->
+    <div class="com-brands">
+        <div class="com-brand-img">
+            <h1 style="font-weight: 700;">Our Partners</h1>
+            <p style="text-align: justify;">Our valued partners enable us to deliver robust, innovative solutions that
+                enhance operational efficiency
+                and drive growth. Together, we are committed to providing the best technology and expertise to meet the
+                evolving needs of our clients.</p>
+        </div>
+        <div class="com-brand-content">
+            <h2>Authorized Training Partners</h2>
+            <div class="swiper comSwiper">
+                <div class="swiper-wrapper">
+                    <!-- slide 1 -->
+                    <!-- slide 1 -->
+                    <div class="swiper-slide">
+                        <div class="">
+                            <img src="image/Cisco branding.png" alt=""
+                                style="width: 120px; height: auto; margin: 0 2px;">
+                        </div>
+                    </div>
+                    <!-- slide 2 -->
+                    <div class="swiper-slide">
+                        <div class="">
+                            <img src="image/hclbrand.png" alt="" style="width: 120px; height: auto; margin: 0 2px;">
+                        </div>
+                    </div>
+                    <!-- slide 3 -->
+                    <div class="swiper-slide">
+                        <div class="">
+                            <img src="image/fortinetbrand.png" alt=""
+                                style="width: 120px; height: auto; margin: 0 2px;">
+                        </div>
+                    </div>
+                    <!-- slide 4 -->
+                    <div class="swiper-slide">
+                        <div class="">
+                            <img src="image/vi 16070 branding logo website.png" alt=""
+                                style="width: 120px; height: auto; margin: 0 8px;">
+                        </div>
+                    </div>
+                    <!-- slide 5 -->
+                    <div class="swiper-slide">
+                        <div class="">
+                            <img src="image/intel 16070 Branding logo website.png" alt=""
+                                style="width: 120px; height: auto; margin: 0 8px;">
+                        </div>
+                    </div>
+                    <!-- slide 6 -->
+                    <div class="swiper-slide">
+                        <div class="">
+                            <img src="image/HP Branding logo website.png" alt=""
+                                style="width: 120px; height: auto; margin: 0 8px;">
+                        </div>
+                    </div>
+                    <!-- slide 7 -->
+
+                    <!-- slide 8 -->
+                    <div class="swiper-slide">
+                        <div class="">
+                            <img src="image/dellbrand.png" alt="" style="width: 120px; height: auto; margin: 0 8px;">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <img src="image/border-radius-bottom.png" alt="" class="com-shape1">
+        <img src="image/border-radius-bottom.png" alt="" class="com-shape2"> -->
+    </div>
+    <!-- ABOUT SECTION  -->
+    <div class="about-container">
+        <div class="about-img">
+            <img src="image/CCIE-requirements.jpg" alt="">
+        </div>
+        <div class="about-content">
+            <h1>About <span style="color: #d5a12b;">Nitiz Sharma Global Tech Private Limited </span></h1>
+
+            <p style="text-align: justify;">Nitiz Sharma Global Tech Private Limited & Company (NSGT) is a registered
+                entity in India, dedicated to empowering the Next Generation
+                of network and security professionals. Since its inception in 2010, NSGT has grown to become one of
+                India’s most trusted and leading providers of networking and data communication training and solutions.
+
+                Founded with a vision to simplify complex concepts and deliver hands-on, industry-relevant training,
+                NSGT
+                has consistently raised the bar in IT education. Whether online or offline, our training approach is
+                rooted in real-world experience, ensuring students progress from foundational understanding to
+                expert-level proficiency.
+
+                We are widely recognized as a pioneer in the field, known for our commitment to quality and our ability
+                to set new standards in the education and IT training sector. If you’re looking to build a successful
+                career in networking or cybersecurity, no other organization can offer the depth of knowledge,
+                mentorship, and support that NSGT brings to the table. </p>
+
+            <div class="about-text-wrapper">
+                <div class="about-text">
+                    <h2><i class="fas fa-chalkboard-teacher"></i> Expert Instructor</h2>
+                    <h2><i class="fas fa-laptop"></i> Remote Learning</h2>
+
+                </div>
+                <div class="about-text">
+                    <h2><i class="fas fa-certificate"></i>Completion Certificate</h2>
+                    <h2><i class="fas fa-user-graduate"></i> Self Development</h2>
+
+                </div>
+            </div>
+            <div class="btn">
+                <a href="about.html" style="text-decoration: none;">
+                    <button>About Us &nbsp;</button>
+                    <i class="ri-arrow-right-up-long-line"></i>
+                </a>
+            </div>
+        </div>
+        <div class="about-slide-wrapper">
+            <div class="swiper aboutSwiper">
+                <div class="swiper-wrapper">
+                    <!-- slide 1 -->
+                    <div class="swiper-slide">
+                        <div class="about-slide-img">
+                            <img src="image/1 5.png" alt="">
+                        </div>
+                    </div>
+                    <!-- slide 2 -->
+                    <div class="swiper-slide">
+                        <div class="about-slide-img">
+                            <img src="image/2 8.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-button-prev swiper-btn2 swiper-btn-prev"><i class="ri-arrow-left-s-line"></i></div>
+        <div class="swiper-button-next swiper-btn2 swiper-btn-next"><i class="ri-arrow-right-s-line"></i></div>
+    </div>
+    <!-- SERVICES  -->
+    <section class="services">
+        <section class="learning-body">
+            <div class="section-title">
+                <h2 class="learning-heading" style="font-weight: 700;">Explore Our Learning Options</h2>
+            </div>
+            <div class="learning-container">
+                <div class="learning-file-container" id="container1" data-border-color="#d5a12b"
+                    data-hover-text-color="#242424">
+                    <div class="learning-inner-container">
+                        <div class="learning-image-container">
+                            <img src="image/Classroom training.png" alt="Classroom Training"
+                                class="learning-file-image">
+                        </div>
+                        <div class="learning-content">
+                            <h1 class="learning-text">
+                                <span class="learning-title">
+                                    Classroom Training
+                                </span>
+                                <span class="learning-text-effect"></span>
                             </h1>
-                            <p>Have questions or need assistance? Our team is ready to support you! Whether you’re
-                                looking for course details, enrollment guidance, or technical help, we’re just a message
-                                away</p>
+                            <p class="learning-description">
+                                Traditional, instructor-led learning offered in popular global destinations.
+                            </p>
                         </div>
+                    </div>
+                </div>
+                <div class="learning-file-container" id="container2" data-border-color="#d5a12b"
+                    data-hover-text-color="#242424">
+                    <div class="learning-inner-container">
+                        <div class="learning-image-container">
+                            <img src="image/Flexible.png" alt="Fly-Me-A-Trainer" class="learning-file-image">
+                        </div>
+                        <div class="learning-content">
+                            <h1 class="learning-text">
+                                <span class="learning-title">
+                                    Fly-Me-A-Trainer (FMAT)
+                                </span>
+                                <span class="learning-text-effect"></span>
+                            </h1>
+                            <p class="learning-description">
+                                Flexible on-site learning for larger groups. Fly an expert instructor directly to your
+                                location, anywhere in the world.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="learning-file-container" id="container3" data-border-color="#d5a12b"
+                    data-hover-text-color="#242424">
+                    <div class="learning-inner-container">
+                        <div class="learning-image-container">
+                            <img src="image/Online class.png" alt="Live Online Classes" class="learning-file-image">
+                        </div>
+                        <div class="learning-content">
+                            <h1 class="learning-text">
+                                <span class="learning-title">
+                                    Live Online Classes
+                                </span>
+                                <span class="learning-text-effect"></span>
+                            </h1>
+                            <p class="learning-description">
+                                Flexible virtual learning with expert instructors from the comfort of your own space.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="learning-file-container" id="container4" data-border-color="#d5a12b"
+                    data-hover-text-color="#242424">
+                    <div class="learning-inner-container">
+                        <div class="learning-image-container">
+                            <img src="image/Instructor.png" alt="Flexi" class="learning-file-image">
+                        </div>
+                        <div class="learning-content">
+                            <h1 class="learning-text">
+                                <span class="learning-title">
+                                    Flexi
+                                </span>
+                                <span class="learning-text-effect"></span>
+                            </h1>
+                            <p class="learning-description">
+                                Self-paced learning with edited lectures, courseware, hands-on labs, and optional
+                                instructor-led doubt clearing sessions.
+                            </p>
+                        </div>
+
+
 
                     </div>
                 </div>
-
             </div>
-        </div>
-        </header>
 
-        <div class="bg-white text-black font-sans ">
-            <div class="min-h-screen flex items-center justify-center px-12 md:px-20 py-10">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-                    <!-- Left Section -->
+            <!-- <a href="corporatetraining.html" style="text-decoration: none; padding: 30px;">
+                <button class="cta-button">
+                    Learn More <i class="fas fa-angle-double-right"></i>
+                </button>
+            </a> -->
+
+            <div class="service-bottom-content">
+                <img src="image/atom-png-9.png" alt="">
+                <h2>Level Up Your Networking</h2>
+            </div>
+        </section>
+
+        <div class="section-title ">
+            <h2>Why Choose Us?</h2>
+        </div>
+
+
+        <div class="service-wrapper">
+            <!-- card 1 -->
+            <div class="service-card">
+                <div class="service-img">
+                    <img src="image/live-sessions-1.png" alt="">
+                </div>
+                <div class="service-content">
+                    <h2>Live Sessions</h2>
+                    <p style="color:white;">Five days a week session delivery, which includes both in-depth theoretical
+                        knowledge and practical hands-on labs.</p>
+                </div>
+            </div>
+            <!-- card 2 -->
+            <div class="service-card">
+                <div class="service-img">
+                    <img src="image/Bootcamp-1.png" alt="">
+                </div>
+                <div class="service-content">
+                    <h2>Bootcamp</h2>
+                    <p style="color:white;">Bootcamp level training on demand. Detailed boot-camp sessions for long
+                        hours to deliver what is important. </p>
+                </div>
+            </div>
+            <!-- card 3 -->
+            <div class="service-card">
+                <div class="service-img">
+                    <img src="image/Lab-Practice-1.png" alt="">
+                </div>
+                <div class="service-content">
+                    <h2>Lab Practice</h2>
+                    <p style="color:white;">Sessions for labs so that you don’t miss any hands on experience. You can
+                        practice what you’ve learnt.</p>
+                </div>
+            </div>
+            <!-- card 4 -->
+            <div class="service-card">
+                <div class="service-img">
+                    <img src="image/discussions-1.png" alt="">
+                </div>
+                <div class="service-content">
+                    <h2>Discussions</h2>
+                    <p style="color:white;">Classroom discussions, problem solving discussions, question quiz. So that
+                        we make sure no one is left behind.</p>
+                </div>
+            </div>
+            <!-- card 5 -->
+
+            <!-- card 6 -->
+
+        </div>
+
+        <!-- <img src="image/service-element.webp" alt="" class="service-element"> -->
+    </section>
+
+
+
+    <!-- PROCESS SECTION  -->
+
+
+
+
+    <!-- TEAMS SECTION  -->
+    <section class="min-h-screen flex items-center justify-center bg-[#f1f1f7] font-sans">
+        <div class="w-full max-w-5xl p-7">
+
+            <!-- Heading -->
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-black">Meet the Instructors</h2>
+                <p class="text-gray-600 mt-2 text-lg">Learn networking from industry-certified experts at Nitiz Sharma
+                    Global Tech</p>
+            </div>
+
+            <!-- Testimonial Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-20 items-center">
+                <div class="relative w-full h-96 perspective-[1000px]" id="image-container"></div>
+                <div class="flex flex-col justify-between">
                     <div>
-                        <h1 class="text-4xl font-bold mb-4">
-                            Hello, my name is <span class="font-bold font-cursive" style="color: #d5a12b;">Nitiz
-                                Sharma</span>
-                        </h1>
-                        <h2 class="text-3xl font-bold">
-                            I'm a <span id="typingText" class="typing" style="color: #d5a12b;"></span>
-                        </h2>
-                        <p>Mr. Nitiz Sharma is the Managing Director of Nitiz Sharma Global Tech Pvt.Ltd.</p>
-
-                        <p>He is a 2x CCIE Certified Master Instructor with over 17+ years of networking experience,
-                            having delivered more than 250+ corporate training sessions.</p>
-
-                        <p>He is proficient in CCIE Data Centre and CCIE Security, and has trained over 10,000+ students
-                            globally, achieving over 4000+ CCIE successes. He holds certifications in Fortinet NSE 4 and
-                            FCX. His expertise includes Cisco devices like ASA, Nexus, and AMP, and Fortinet products
-                            such as Fortigate and Fortimanager.</p>
+                        <h3 class="text-2xl font-bold text-black mb-1" id="name"></h3>
+                        <p class="text-sm text-gray-500 mb-8" id="designation"></p>
+                        <p class="text-lg text-gray-600 leading-7" id="quote"></p>
                     </div>
 
-                    <!-- Right Section -->
-                    <div class="relative flex justify-center">
-                        <img src="image/nitiz-768x960.webp" alt="Profile" class="w-72 md:w-96 rounded-sm shadow-sm" />
-                        <div class="absolute top-0 left-0 w-10 h-10 border-t-8 border-l-8"
-                            style="border-color: #d5a12b;"></div>
-                        <div class="absolute bottom-0 right-0 w-10 h-10 border-b-8 border-r-8"
-                            style="border-color: #d5a12b;"></div>
-
+                    <!-- Navigation Buttons -->
+                    <div class="flex gap-4 pt-12 md:pt-0">
+                        <button id="prev-button"
+                            class="btn-frosted w-7 h-7 rounded-full flex items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 fill-white" viewBox="0 0 24 24">
+                                <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
+                            </svg>
+                        </button>
+                        <button id="next-button"
+                            class="btn-frosted w-7 h-7 rounded-full flex items-center justify-center hover:bg-[#00a6fb]">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 fill-white" viewBox="0 0 24 24">
+                                <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
+                            </svg>
+                        </button>
                     </div>
                 </div>
             </div>
-
         </div>
+    </section>
 
-        <div class="bg-black text-white py-12 px-6 text-center">
-            <h2 class="text-3xl font-bold mb-8" style="color: #d5a12b;">
-                Programs Nitiz Sharma Teaches
-            </h2>
-        
-            <!-- Slider Wrapper -->
-            <div class="relative max-w-7xl mx-auto overflow-hidden">
-                <!-- Slides Wrapper -->
-                <div id="cardSlider" class="flex transition-transform duration-500 ease-in-out w-[200%]">
-        
-                    <!-- Slide 1: First 3 Cards -->
-                    <div class="w-full flex justify-center space-x-6">
-                        <!-- Card 1 -->
-                        <div class="w-80 bg-gray-900 rounded-xl shadow-lg">
-                            <img src="image/CCIE SEC.png" alt="CCIE Security" class="rounded-t-xl w-full h-40 object-cover">
-                            <div class="p-6">
-                                <span class="inline-block px-4 py-1 mb-4 bg-yellow-200 text-gray-800 text-xs font-bold rounded-full">CCIE</span>
-                                <h3 class="text-lg font-semibold mb-2">CCIE Security</h3>
-                                <p class="text-sm text-gray-400">Next Batch: 23rd July, 2024</p>
-                            </div>
-                        </div>
-        
-                        <!-- Card 2 -->
-                        <div class="w-80 bg-gray-900 rounded-xl shadow-lg">
-                            <img src="image/fcx.png" alt="FCX / NSE8" class="rounded-t-xl w-full h-40 object-cover">
-                            <div class="p-6">
-                                <span class="inline-block px-4 py-1 mb-4 bg-yellow-200 text-gray-800 text-xs font-bold rounded-full">NSE</span>
-                                <h3 class="text-lg font-semibold mb-2">FCX / NSE8</h3>
-                                <p class="text-sm text-gray-400">Next Batch: 3rd Aug, 2024</p>
-                            </div>
-                        </div>
-        
-                        <!-- Card 3 -->
-                        <div class="w-80 bg-gray-900 rounded-xl shadow-lg">
-                            <img src="image/CCNP Sec.png" alt="CCNP Security" class="rounded-t-xl w-full h-40 object-cover">
-                            <div class="p-6">
-                                <span class="inline-block px-4 py-1 mb-4 bg-yellow-200 text-gray-800 text-xs font-bold rounded-full">CCNP</span>
-                                <h3 class="text-lg font-semibold mb-2">CCNP Security</h3>
-                                <p class="text-sm text-gray-400">Next Batch: 23rd July, 2024</p>
-                            </div>
-                        </div>
-                    </div>
-        
-                    <!-- Slide 2: Placeholder Cards -->
-                    <div class="w-full flex justify-center space-x-6">
-                        <!-- Card 4 -->
-                        <div class="w-80 bg-gray-800 rounded-xl shadow-lg">
-                            <img src="https://via.placeholder.com/320x160" alt="More Programs Coming Soon" class="rounded-t-xl w-full h-40 object-cover">
-                            <div class="p-6 text-center">
-                                <p class="text-gray-400">More Programs Coming Soon</p>
-                            </div>
-                        </div>
-        
-                        <!-- Card 5 -->
-                        <div class="w-80 bg-gray-800 rounded-xl shadow-lg">
-                            <img src="https://via.placeholder.com/320x160" alt="More Programs Coming Soon" class="rounded-t-xl w-full h-40 object-cover">
-                            <div class="p-6 text-center">
-                                <p class="text-gray-400">More Programs Coming Soon</p>
-                            </div>
-                        </div>
-        
-                        <!-- Card 6 -->
-                        <div class="w-80 bg-gray-800 rounded-xl shadow-lg">
-                            <img src="https://via.placeholder.com/320x160" alt="More Programs Coming Soon" class="rounded-t-xl w-full h-40 object-cover">
-                            <div class="p-6 text-center">
-                                <p class="text-gray-400">More Programs Coming Soon</p>
-                            </div>
-                        </div>
-                    </div>
+
+
+
+    <!-- why choose us -->
+    <section class="testimonials testimonialspad">
+        <div class="test-title">
+            <h2 style="color: white; font-weight: 700;">Choose Your Program Below to See How We Can Help</h2>
+        </div>
+        <div class="client-wrapper">
+            <div class="client-det">
+                <div class="client-img">
+                    <img src="image/Mobile-Marketing-bro.png" alt="">
                 </div>
-        
-                <!-- Dot Navigation -->
-                <div class="flex justify-center space-x-3 mt-6">
-                    <button onclick="goToCardSlide(0)" class="dot w-3 h-3 rounded-full bg-yellow-400"></button>
-                    <button onclick="goToCardSlide(1)" class="dot w-3 h-3 rounded-full bg-gray-500"></button>
+
+            </div>
+            <div class="client-content">
+                <p style="color: white; text-align: justify;">Our training programs can bring you a super exciting
+                    experience of learning
+                    through online! You never face any negative experience while enjoying your classes virtually by
+                    sitting in your comfort zone. Our flexible learning initiatives will help you to learn better and
+                    quicker than the traditional ways of learning skills.</p>
+                <div class="btn">
+                    <a href="contact.html">
+                        <button class="inline-flex items-center">
+                            Get Started Now&nbsp;
+                            <i class="ri-arrow-right-up-long-line"></i>
+                        </button>
+                    </a>
                 </div>
             </div>
         </div>
-        
-        
-        
+        <div class="container"
+            style="max-width: 1200px; margin: 0 auto; padding: 40px 20px; font-family: Arial, sans-serif;">
+            <div class="row" style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: space-between;">
 
-        <footer>
-            <div class="footer-container lines">
-                <div class="footer-logo">
-                    <div class="logo">
-                        <a href="index.html"><span><img class="logosize" src="image/Nitiz-Sharma9.png"></span></a>
+                <div class="card"
+                    onmouseover="this.style.border='2px solid #d5a12b'; this.style.transform='scale(1.03)'; this.style.boxShadow='0 6px 15px rgba(0,123,255,0.3)';"
+                    onmouseout="this.style.border='2px solid transparent'; this.style.transform='scale(1)'; this.style.boxShadow='0 4px 10px rgba(0,0,0,0.1)';"
+                    style="flex: 1 1 23%; background: #fff; padding: 25px; border: 2px solid transparent; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); transition: all 0.4s ease; position: relative; min-width: 250px;">
+                    <div class="icon" style="font-size: 32px; color: #d5a12b; margin-bottom: 15px;"><i
+                            class="fa fa-play-circle"></i></div>
+                    <h2 style="font-size: 20px; color: #222; margin-bottom: 10px;">On-Demand Training</h2>
+                    <p style="font-size: 14px; color: #555; line-height: 1.6;">Choose the training you want, and watch
+                        videos of instructor-led content anywhere.</p>
+                    <a href="whychooseus.html"
+                        style="display: inline-block; margin-top: 15px; font-size: 14px; color: #d5a12b; text-decoration: none;">Read
+                        More...</a>
+                </div>
+
+                <div class="card"
+                    onmouseover="this.style.border='2px solid #d5a12b'; this.style.transform='scale(1.03)'; this.style.boxShadow='0 6px 15px rgba(40,167,69,0.3)';"
+                    onmouseout="this.style.border='2px solid transparent'; this.style.transform='scale(1)'; this.style.boxShadow='0 4px 10px rgba(0,0,0,0.1)';"
+                    style="flex: 1 1 23%; background: #fff; padding: 25px; border: 2px solid transparent; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); transition: all 0.4s ease; position: relative; min-width: 250px;">
+                    <div class="icon" style="font-size: 32px; color: #d5a12b; margin-bottom: 15px;"><i
+                            class="fa fa-road"></i></div>
+                    <h2 style="font-size: 20px; color: #222; margin-bottom: 10px;">Learning Paths</h2>
+                    <p style="font-size: 14px; color: #555; line-height: 1.6;">Organized training helps guide you
+                        through the most relevant topics for certification.</p>
+                    <a href="whychooseus.html"
+                        style="display: inline-block; margin-top: 15px; font-size: 14px; color: #d5a12b; text-decoration: none;">Read
+                        More...</a>
+                </div>
+
+                <div class="card"
+                    onmouseover="this.style.border='2px solid #d5a12b'; this.style.transform='scale(1.03)'; this.style.boxShadow='0 6px 15px rgba(23,162,184,0.3)';"
+                    onmouseout="this.style.border='2px solid transparent'; this.style.transform='scale(1)'; this.style.boxShadow='0 4px 10px rgba(0,0,0,0.1)';"
+                    style="flex: 1 1 23%; background: #fff; padding: 25px; border: 2px solid transparent; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); transition: all 0.4s ease; position: relative; min-width: 250px;">
+                    <div class="icon" style="font-size: 32px; color: #d5a12b; margin-bottom: 15px;"><i
+                            class="fa fa-laptop-code"></i></div>
+                    <h2 style="font-size: 20px; color: #222; margin-bottom: 10px;">Get Hands-On</h2>
+                    <p style="font-size: 14px; color: #555; line-height: 1.6;">Our quizzes, labs, projects, and
+                        exercises help reinforce your knowledge.</p>
+                    <a href="whychooseus.html"
+                        style="display: inline-block; margin-top: 15px; font-size: 14px; color: #d5a12b; text-decoration: none;">Read
+                        More...</a>
+                </div>
+
+                <div class="card"
+                    onmouseover="this.style.border='2px solid #d5a12b'; this.style.transform='scale(1.03)'; this.style.boxShadow='0 6px 15px rgba(253,126,20,0.3)';"
+                    onmouseout="this.style.border='2px solid transparent'; this.style.transform='scale(1)'; this.style.boxShadow='0 4px 10px rgba(0,0,0,0.1)';"
+                    style="flex: 1 1 23%; background: #fff; padding: 25px; border: 2px solid transparent; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); transition: all 0.4s ease; position: relative; min-width: 250px;">
+                    <div class="icon" style="font-size: 32px; color: #d5a12b; margin-bottom: 15px;"><i
+                            class="fa fa-sync-alt"></i></div>
+                    <h2 style="font-size: 20px; color: #222; margin-bottom: 10px;">Access to All Courses & Updates</h2>
+                    <p style="font-size: 14px; color: #555; line-height: 1.6;">We update courses and learning materials
+                        to the platform regularly so you're always up-to-date.</p>
+                    <a href="whychooseus.html"
+                        style="display: inline-block; margin-top: 15px; font-size: 14px; color: #d5a12b; text-decoration: none;">Read
+                        More...</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Student Reviews -->
+    <!-- TESTIMONIALS -->
+    <!-- <div class="spacer">
+        <div class="testimonial-heading">
+            <h1 style="font-size: 3rem; margin-bottom: 30px;">What Our Students Say</h1>
+
+        </div>
+    
+    </div> -->
+    <section class="nitizreviewsstudents">
+        <div class="nitizreviewsheading">
+            <h1 style="font-size: 3rem; font-weight: 700;">What Our Students Say</h1>
+        </div>
+        <div class="swiper nitizreviewsslider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide nitizreviewsslide">
+                    <div class="nitizreviewscard text-center">
+                        <img src="image/Anwar.png" class="mx-auto w-24 h-24 rounded-full object-cover mb-4"
+                            alt="Anwar Ali">
+                        <p class="text-white mb-2">"The way of delivering the training is awesome with well planned
+                            structure and excellent CCIE Security material."</p>
+                        <p class="text-yellow-500 text-lg">★★★★★</p>
+                        <p class="font-semibold mt-2">- Anwar Ali</p>
+                    </div>
+
+                    <div class="nitizreviewscard">
+                        <img src="image/Britto.png" class="mx-auto w-24 h-24 rounded-full object-cover mb-4"
+                            alt="Jane Smith">
+                        <p class="nitizreviewscontent">"Nitiz teaches with unmatched depth and passion—making complex
+                            topics feel effortless."</p>
+                        <p class="nitizreviewsstars">★★★★★</p>
+                        <p class="nitizreviewsauthor">- Britto Arthur</p>
+                    </div>
+                    <div class="nitizreviewscard">
+                        <img src="image/Nabeel.png" class="mx-auto w-24 h-24 rounded-full object-cover mb-4"
+                            alt="Alex Brown">
+                        <p class="nitizreviewscontent">""Learning from Madhuri Suresh in CCIE DC has been
+                            exceptional—clear, engaging, and expertly guided!."</p>
+                        <p class="nitizreviewsstars">★★★★★</p>
+                        <p class="nitizreviewsauthor">- Nabeel Sarwar</p>
                     </div>
                 </div>
-                <div class="footer-wrapper">
-                    <div class="footer-col">
-                        <h2>Links</h2>
-    
-                        <a href="about.html">About Us</a>
-                        <a href="blogs.html">Blogs</a>
-                        <a href="contact.html">Contact Us</a>
-                        <a href="corporatetraining.html">Corporate Training</a>
-    
+                <div class="swiper-slide nitizreviewsslide">
+                    <div class="nitizreviewscard">
+                        <img src="image/Manoj.png" class="mx-auto w-24 h-24 rounded-full object-cover mb-4"
+                            alt="Michael Lee">
+                        <p class="nitizreviewscontent">"Malav made learning seamless with clear explanations and a
+                            well-structured syllabus."</p>
+                        <p class="nitizreviewsstars">★★★★★</p>
+                        <p class="nitizreviewsauthor">- Manoj Sonsurkar</p>
                     </div>
-                    <div class="footer-col">
-                        <h2>Other Links</h2>
-    
-                        <a href="privacy.html">Privacy Policy</a>
+                    <div class="nitizreviewscard">
+                        <img src="image/Mansoor.png" class="mx-auto w-24 h-24 rounded-full object-cover mb-4"
+                            alt="Emily Clark">
+                        <p class="nitizreviewscontent">"With 15 years of experience and a CCIE, I can confidently say
+                            Nitiz Sharma’s expertise is unmatched."
+                            Let me know if you'd like a slightly different tone!"</p>
+                        <p class="nitizreviewsstars">★★★★★</p>
+                        <p class="nitizreviewsauthor">- Mansoor Abbasi</p>
+                    </div>
+                    <div class="nitizreviewscard">
+                        <img src="image/Vinay.png" class="mx-auto w-24 h-24 rounded-full object-cover mb-4"
+                            alt="David Martin">
+                        <p class="nitizreviewscontent">"Malav is an excellent faculty member, known for his patience in
+                            addressing every query until students fully grasp the topic."</p>
+                        <p class="nitizreviewsstars">★★★★★</p>
+                        <p class="nitizreviewsauthor">- Vinay Harish</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next nitizreviewsnext"></div>
+            <div class="swiper-button-prev nitizreviewsprev"></div>
+    </section>
+    <!-- Student Reviews end -->
+
+    <div class="cta-container">
+        <h1>Need Training for Your Team?
+        </h1>
+        <p>Get in touch to request a free demo of our platform or to get a quote.
+
+        </p>
+        <a href="corporatetraining.html" style="text-decoration: none;">
+            <button class="cta-button">
+                Learn More <i class="fas fa-angle-double-right"></i>
+            </button>
+        </a>
+    </div>
+
+    <!-- ContactFrom -->
+    <div class="cont">
+        <div class="form-container">
+            <div class="form-section">
+                <h2>Have a Question? We’re here to Help You!
+                </h2>
+                <p style="color: white;line-height: 1.5rem;">If you’re interested in learning more about our training
+                    materials or would like to schedule a free demo, please feel free to contact us at your convenience.
+                </p>
+
+                <form action="https://formsubmit.co/nandini@nitizsharma.com" method="POST" class="space-y-4">
+                    <!-- Hidden Setup -->
+                    <input type="hidden" name="_subject" value="New Contact Form Submission">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="hidden" name="_cc" value="nishasahoo99@gmail.com">
+                    <input type="hidden" name="_autoresponse"
+                        value="Thank you for contacting us. We will get back to you soon.">
+                    <input type="hidden" name="_next" value="https://yourdomain.com/thank-you.html">
+
+                    <!-- Full Name -->
+                    <input type="text" name="Full Name" placeholder="Full Name" required
+                        class="w-full px-4 py-2 bg-white border border-gray-300  placeholder-gray-500" />
+
+                    <!-- Email -->
+                    <input type="email" name="Email" placeholder="Your Email" required
+                        class="w-full px-4 py-2 bg-white border border-gray-300  placeholder-gray-500" />
+
+                    <!-- Phone with Country Code -->
+                    <div class="flex gap-2">
+                        <select name="Country Code" required
+                            class="w-[40%] px-4 py-2 border border-gray-300 text-sm bg-white">
+                            <option value="">Code</option>
+                            <option value="+1">🇺🇸 +1 (USA)</option>
+                            <option value="+91">🇮🇳 +91 (India)</option>
+                            <option value="+44">🇬🇧 +44 (UK)</option>
+                            <option value="+61">🇦🇺 +61 (Australia)</option>
+                            <option value="+81">🇯🇵 +81 (Japan)</option>
+                            <option value="+49">🇩🇪 +49 (Germany)</option>
+                            <option value="+33">🇫🇷 +33 (France)</option>
+                            <option value="+971">🇦🇪 +971 (UAE)</option>
+                            <option value="+880">🇧🇩 +880 (Bangladesh)</option>
+                        </select>
+                    </div>
+                    <div>
+                        <input type="tel" name="Phone Number" placeholder="Phone Number" required
+                            class="w-full px-4 py-2 bg-white border border-gray-300  placeholder-gray-500" />
+                    </div>
+
+                    <!-- Course Selection -->
+                    <select name="Course" class="w-full px-4 py-2 bg-white border border-gray-300" required>
+                        <option value="">Choose Course</option>
+                        <option value="CCIE Security">CCIE Security</option>
+                        <option value="CCNP Security">CCNP Security</option>
+                        <option value="Firewall Training">Firewall Training</option>
+                    </select>
+
+                    <!-- Message -->
+                    <textarea name="Message" placeholder="Message" rows="4" required
+                        class="w-full px-4 py-2 bg-white border border-gray-300  placeholder-gray-500"></textarea>
+
+                    <!-- Submit Button -->
+                    <button type="submit"
+                        class="w-[50%] bg-[#fbbf24] text-black font-semibold py-2  hover:bg-yellow-400 transition">
+                        Enquire Now
+                    </button>
+                </form>
+
+
+                <p id="success-message" style="display:none; color: green; font-weight: bold;">Form submitted
+                    successfully!</p>
+
+            </div>
+
+            <div class="address-section">
+                <h3>Contact Information</h3>
+                <p style="line-height: 1.5rem;"><i class="fas fa-map-marker-alt"></i>Nitiz Sharma Global Tech Pvt. Ltd,
+                    48-49, Gubbalala Main Rd, off Kanakapura Road, Gubbalala, Subramanyapura, Bengaluru, Karnataka
+                    560061</p>
+                <p><i class="fas fa-phone"></i> +91 7019021129</p>
+                <p><i class="fas fa-phone"></i> +91 7760144441</p>
+                <p><i class="fas fa-envelope"></i> <a href="mailto:info@yoursite.com">info@nitizsharma.com</a></p>
+                <p><i class="fas fa-envelope"></i> <a href="mailto:info@yoursite.com">nitiz@nitizsharma.com</a></p>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- <Faq Section -->
+    <div class="containerfaq">
+        <div class="headerfaq">
+            <!-- <h4 class="subtitlefaq">OUR SERVICES</h4> -->
+            <h1 class="titlefaq">What <span class="highlight">Services</span> we’re offering</h1>
+            <p class="descriptionfaq">We specialize in delivering cutting-edge solutions across multiple domains.
+                Explore our diverse range of services designed to transform your business, streamline operations, and
+                drive growth.</p>
+        </div>
+        <div class="servicesfaq">
+            <div class="servicedesign">
+                <h1>What services do you offer? <span class="arrow">&#8594;</span></h1>
+                <p>We offer advanced training and certification programs in network technology, including CCIE, SDN,
+                    CCNA, FCX, and more. Our programs emphasize practical and hands-on learning experiences.
+                </p>
+
+            </div>
+            <div class="servicedesign">
+                <h1>How can I enroll in a course? <span class="arrow">&#8594;</span></h1>
+                <p>To enroll, visit our website, select the desired course, fill in the registration form, and make the
+                    full payment. You will receive a confirmation email with course details and access instructions upon
+                    successful payment.</p>
+
+            </div>
+            <div class="servicedesign">
+                <h1>What payment methods do you accept? <span class="arrow">&#8594;</span></h1>
+                <p>We accept various payment methods, including credit cards, debit cards, and online banking.</p>
+
+            </div>
+            <div class="servicedesign">
+                <h1>What is your refund policy? <span class="arrow">&#8594;</span></h1>
+                <p>Refund requests must be made within 24 hours of purchase and are subject to our Refund and
+                    Cancellation Policy. Customized training programs and services consumed or partially consumed are
+                    not eligible for refunds.</p>
+
+            </div>
+            <div class="servicedesign">
+                <h1>How do I access course materials?<span class="arrow">&#8594;</span></h1>
+                <p>Upon successful enrollment, you will receive access to course materials through our online portal.
+                    You will also have 24/7 access to lab sessions and recorded video lectures.</p>
+
+            </div>
+            <div class="servicedesign">
+                <h1>Can i get one-on-one support from instructor <span class="arrow">&#8594;</span></h1>
+                <p>Yes, we offer one-on-one individual sessions with our expert instructors to provide personalized
+                    support and guidance.</p>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <footer>
+        <div class="footer-container lines">
+            <div class="footer-logo">
+                <div class="logo">
+                    <a href="index.html"><span><img class="logosize" src="image/Nitiz-Sharma9.png"></span></a>
+                </div>
+            </div>
+            <div class="footer-wrapper">
+                <div class="footer-col">
+                    <h2>Links</h2>
+                    <a href="about.html">About Us</a>
+                    <a href="blogs.html">Blogs</a>
+                    <a href="contact.html">Contact Us</a>
+                    <a href="corporatetraining.html">Corporate Training</a>
+                </div>
+                <div class="footer-col">
+                    <h2>Other Links</h2>
+                    <a href="privacy.html">Privacy Policy</a>
                     <a href="refundPolicy.html">Refund Policy</a>
                     <a href="instructor.html">Become An Instructor</a>
                     <a href="termscondition.html">Terms and Conditions</a>
                     <a href="customerregistrstion.html">Customer Registration process and guidelines</a>
-                    </div>
-                    <!-- <div class="footer-col">
-                        <h1>Subscribe our newsletter</h1>
-    
-                        <div class="inputs">
-                            <input type="text" placeholder="Enter E-mail Here...">
-                            <i class="fa fa-paper-plane fa-md"></i>
-                        </div>
-                    </div> -->
                 </div>
             </div>
-    
-            <div class="footer-bottom">
-                <p>© 2025, Nitiz Sharma. All rights reserved.</p>
-                <div class="footer-social-icon">
-                    <a href="https://www.facebook.com/nitizsharmatrainings/" target="_blank">
-                        <i class="ri-facebook-fill"></i>
-                    </a>
-                    <a href="https://www.instagram.com/nitizsharmatrainings/" target="_blank">
-                        <i class="ri-instagram-line"></i>
-                    </a>
-                    <a href="https://twitter.com/NitizSharmaNZ" target="_blank">
-                        <i class="ri-twitter-x-line"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/company/nitiz-sharma-training/" target="_blank">
-                        <i class="ri-linkedin-box-fill"></i>
-                    </a>
-                    <a href="https://www.youtube.com/@nitizsharm" target="_blank">
-                        <i class="ri-youtube-fill"></i>
-                    </a>
-    
-                </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2025, Nitiz Sharma. All rights reserved.</p>
+            <div class="footer-social-icon">
+                <a href="https://www.facebook.com/nitizsharmatrainings/" target="_blank">
+                    <i class="ri-facebook-fill"></i>
+                </a>
+                <a href="https://www.instagram.com/nitizsharmatrainings/" target="_blank">
+                    <i class="ri-instagram-line"></i>
+                </a>
+                <a href="https://twitter.com/NitizSharmaNZ" target="_blank">
+                    <i class="ri-twitter-x-line"></i>
+                </a>
+                <a href="https://www.linkedin.com/company/nitiz-sharma-training/" target="_blank">
+                    <i class="ri-linkedin-box-fill"></i>
+                </a>
+                <a href="https://www.youtube.com/@nitizsharm" target="_blank">
+                    <i class="ri-youtube-fill"></i>
+                </a>
+                <!-- WhatsApp Icon -->
+                <!-- <a href="https://wa.me/917019021129" target="_blank">
+                    <i class="ri-whatsapp-fill"></i>
+                </a> -->
             </div>
-            <a href="https://wa.me/917019021129?text=Hello!%20I%20need%20some%20assistance." class="whatsapp-float"
-                target="_blank">
-                <i class="ri-whatsapp-fill"></i>
-            </a>
-    
-            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
-            <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
-    
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
-        <!-- GSAP  -->
-        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
-        <!-- GSAP SCROLLING -->
-        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
-        <script src="script.js"></script>
-        <script src="https://kit.fontawesome.com/YOUR_FONT_AWESOME_KIT.js" crossorigin="anonymous"></script>
-        <script src="https://md-aqil.github.io/images/swiper.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-            <script>
-               document.addEventListener("DOMContentLoaded", function () {
-    const courseMenuItem = document.querySelector(".menu li.has-dropdown");
-
-    // Only toggle dropdown if the actual <li> (not the <a>) is clicked
-    courseMenuItem.addEventListener("click", function (event) {
-        if (event.target.tagName !== 'A') {
-            event.preventDefault();
-            event.stopPropagation();
-            this.classList.toggle("active");
-        }
-    });
-
-    // Close dropdown on clicking anywhere outside
-    document.addEventListener("click", function (event) {
-        if (!courseMenuItem.contains(event.target)) {
-            courseMenuItem.classList.remove("active");
-        }
-    });
-});
-
-    
-    
-    
-    
-                // phone numberjs
-    
-                // Initialize the phone input field with country flags and codes
-                const phoneInputField = document.querySelector("#phone");
-                const phoneInput = window.intlTelInput(phoneInputField, {
-                    initialCountry: "auto",  // Automatically detects user's country
-                    separateDialCode: true,  // Shows country code separately
-                    autoPlaceholder: "polite",
-                    preferredCountries: ["us", "gb", "in"], // Most commonly used countries at the top
-                    utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js"
-                });
-    
-                // Ensure that only a valid number is submitted
-                document.querySelector("#contactForm").addEventListener("submit", function (event) {
-                    if (!phoneInput.isValidNumber()) {
-                        event.preventDefault();
-                        alert("Please enter a valid phone number.");
-                    }
-                });
-    
-    
-    
-                document.addEventListener("DOMContentLoaded", function () {
-                    const phoneInputField = document.querySelector("#phone");
-    
-                    if (phoneInputField) {
-                        const phoneInput = window.intlTelInput(phoneInputField, {
-                            initialCountry: "auto",
-                            separateDialCode: true,
-                            autoPlaceholder: "polite",
-                            preferredCountries: ["us", "gb", "in"],
-                            geoIpLookup: function (callback) {
-                                fetch("https://ipapi.co/json")
-                                    .then(response => response.json())
-                                    .then(data => callback(data.country_code))
-                                    .catch(() => callback("us"));
-                            },
-                            utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js"
-                        });
-    
-                        // Validate phone number before submitting the form
-                        document.querySelector("#contactForm").addEventListener("submit", function (event) {
-                            if (!phoneInput.isValidNumber()) {
-                                event.preventDefault();
-                                alert("Please enter a valid phone number.");
-                            }
-                        });
-                    } else {
-                        console.error("Phone input field not found.");
-                    }
-                });
-            </script>
-    
-        </footer>
-
-        <script>
-            const texts = ["CCIE Certified Master Instructor", "", ""];
-            let count = 0;
-            let index = 0;
-            let currentText = '';
-            let letter = '';
-
-            (function type() {
-                if (count === texts.length) count = 0;
-                currentText = texts[count];
-                letter = currentText.slice(0, ++index);
-
-                document.getElementById('typingText').textContent = letter;
-
-                if (letter.length === currentText.length) {
-                    count++;
-                    index = 0;
-                    setTimeout(type, 1500);
-                } else {
-                    setTimeout(type, 150);
-                }
-            })();
+        </div>
 
 
-            // slides code
+    </footer>
 
-            const cardSlider = document.getElementById('cardSlider');
-            const cardDots = document.querySelectorAll('.dot');
 
-            function goToCardSlide(index) {
-                cardSlider.style.transform = `translateX(-${index * 100}%)`;
-                cardDots.forEach((dot, i) => {
-                    dot.classList.toggle('bg-yellow-400', i === index);
-                    dot.classList.toggle('bg-gray-500', i !== index);
-                });
+    <div class="scroll-toggle">
+        <button id="scrollBtn" onclick="handleScroll()">
+            <i class="fas fa-arrow-down"></i>
+        </button>
+    </div>
+    <div class="whtspmobil">
+        <a href="https://wa.me/917019021129?text=Hello!%20I%20need%20some%20assistance." class="whatsapp-float"
+            target="_blank">
+            <i class="ri-whatsapp-fill"></i>
+        </a>
+    </div>
+
+
+    <div id="cookie-banner"
+        style="position: fixed; bottom: 0; left: 0; right: 0; background-color: #000; color: #fff; padding: 15px 20px; text-align: center; z-index: 10000; font-family: sans-serif;">
+        <span>This website uses cookies to ensure you get the best experience.</span>
+        <button id="accept-btn"
+            style="margin-left: 15px; padding: 8px 16px; background-color: #fed231; color: #000; border: none; font-weight: bold; cursor: pointer;">
+            Accept
+        </button>
+    </div>
+
+    <!-- Swiper Slider JS  -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+    <!-- GSAP  -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+    <!-- GSAP SCROLLING -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/YOUR_FONT_AWESOME_KIT.js" crossorigin="anonymous"></script>
+    <script src="https://md-aqil.github.io/images/swiper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+    <script>
+
+        document.getElementById('accept-btn').onclick = function () {
+            document.cookie = "gdpr_cookie=accepted; max-age=" + 60 * 60 * 24 * 365 + "; path=/";
+            document.getElementById('cookie-banner').style.display = 'none';
+        };
+
+        // Hide banner if cookie already set
+        window.onload = function () {
+            if (document.cookie.indexOf("gdpr_cookie=accepted") !== -1) {
+                document.getElementById('cookie-banner').style.display = 'none';
             }
+        };
 
-            // Initialize first slide
-            goToCardSlide(0);
 
-        </script>
+
+
+
+        // topto bottomscroll
+
+        // Fix for the submenu dropdown
+
+
+
+
+        if (document.cookie.indexOf("gdpr_cookie=accepted") !== -1) {
+            var script = document.createElement("script");
+            script.src = "https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXX-X"; // Replace with your ID
+            script.async = true;
+            document.head.appendChild(script);
+
+            script.onload = function () {
+                window.dataLayer = window.dataLayer || [];
+                function gtag() { dataLayer.push(arguments); }
+                gtag('js', new Date());
+                gtag('config', 'UA-XXXXXXX-X');
+            }
+        }
+
+
+    </script>
 </body>
 
 </html>
